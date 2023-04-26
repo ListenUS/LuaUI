@@ -3,25 +3,25 @@ This documentation is for the stable release of Orion Library.
 
 ## Booting the Library
 ```lua
-local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local SoleLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/ListenUS/SoleUI/main/source')))()
 ```
 
 
 
 ## Creating a Window
 ```lua
-local Window = OrionLib:MakeWindow({Name = "Title of the library", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+local Window = SoleLib:MakeWindow({Name = "Title of the library", HidePremium = false, SaveConfig = true, ConfigFolder = "SoleTest"})
 
 --[[
-Name = <string> - The name of the UI.
-HidePremium = <bool> - Whether or not the user details shows Premium status or not.
-SaveConfig = <bool> - Toggles the config saving in the UI.
-ConfigFolder = <string> - The name of the folder where the configs are saved.
-IntroEnabled = <bool> - Whether or not to show the intro animation.
-IntroText = <string> - Text to show in the intro animation.
-IntroIcon = <string> - URL to the image you want to use in the intro animation.
-Icon = <string> - URL to the image you want displayed on the window.
-CloseCallback = <function> - Function to execute when the window is closed.
+	Name = <string> - The name of the UI.
+	HidePremium = <bool> - Whether or not the user details shows Premium status or not.
+	SaveConfig = <bool> - Toggles the config saving in the UI.
+	ConfigFolder = <string> - The name of the folder where the configs are saved.
+	IntroEnabled = <bool> - Whether or not to show the intro animation.
+	IntroText = <string> - Text to show in the intro animation.
+	IntroIcon = <string> - URL to the image you want to use in the intro animation.
+	Icon = <string> - URL to the image you want displayed on the window.
+	CloseCallback = <function> - Function to execute when the window is closed.
 ]]
 ```
 
@@ -36,9 +36,9 @@ local Tab = Window:MakeTab({
 })
 
 --[[
-Name = <string> - The name of the tab.
-Icon = <string> - The icon of the tab.
-PremiumOnly = <bool> - Makes the tab accessible to Sirus Premium users only.
+	Name = <string> - The name of the tab.
+	Icon = <string> - The icon of the tab.
+	PremiumOnly = <bool> - Makes the tab accessible to Sirus Premium users only.
 ]]
 ```
 ## Creating a Section
@@ -48,7 +48,7 @@ local Section = Tab:AddSection({
 })
 
 --[[
-Name = <string> - The name of the section.
+	Name = <string> - The name of the section.
 ]]
 ```
 You can add elements to sections the same way you would add them to a tab normally.
@@ -63,10 +63,10 @@ OrionLib:MakeNotification({
 })
 
 --[[
-Title = <string> - The title of the notification.
-Content = <string> - The content of the notification.
-Image = <string> - The icon of the notification.
-Time = <number> - The duration of the notfication.
+	Title = <string> - The title of the notification.
+	Content = <string> - The content of the notification.
+	Image = <string> - The icon of the notification.
+	Time = <number> - The duration of the notfication.
 ]]
 ```
 
@@ -82,8 +82,8 @@ Tab:AddButton({
 })
 
 --[[
-Name = <string> - The name of the button.
-Callback = <function> - The function of the button.
+	Name = <string> - The name of the button.
+	Callback = <function> - The function of the button.
 ]]
 ```
 
@@ -99,9 +99,9 @@ Tab:AddToggle({
 })
 
 --[[
-Name = <string> - The name of the toggle.
-Default = <bool> - The default value of the toggle.
-Callback = <function> - The function of the toggle.
+	Name = <string> - The name of the toggle.
+	Default = <bool> - The default value of the toggle.
+	Callback = <function> - The function of the toggle.
 ]]
 ```
 
@@ -123,9 +123,9 @@ Tab:AddColorpicker({
 })
 
 --[[
-Name = <string> - The name of the colorpicker.
-Default = <color3> - The default value of the colorpicker.
-Callback = <function> - The function of the colorpicker.
+	Name = <string> - The name of the colorpicker.
+	Default = <color3> - The default value of the colorpicker.
+	Callback = <function> - The function of the colorpicker.
 ]]
 ```
 
@@ -151,13 +151,13 @@ Tab:AddSlider({
 })
 
 --[[
-Name = <string> - The name of the slider.
-Min = <number> - The minimal value of the slider.
-Max = <number> - The maxium value of the slider.
-Increment = <number> - How much the slider will change value when dragging.
-Default = <number> - The default value of the slider.
-ValueName = <string> - The text after the value number.
-Callback = <function> - The function of the slider.
+	Name = <string> - The name of the slider.
+	Min = <number> - The minimal value of the slider.
+	Max = <number> - The maxium value of the slider.
+	Increment = <number> - How much the slider will change value when dragging.
+	Default = <number> - The default value of the slider.
+	ValueName = <string> - The text after the value number.
+	Callback = <function> - The function of the slider.
 ]]
 ```
 
@@ -202,10 +202,10 @@ Tab:AddTextbox({
 })
 
 --[[
-Name = <string> - The name of the textbox.
-Default = <string> - The default value of the textbox.
-TextDisappear = <bool> - Makes the text disappear in the textbox after losing focus.
-Callback = <function> - The function of the textbox.
+	Name = <string> - The name of the textbox.
+	Default = <string> - The default value of the textbox.
+	TextDisappear = <bool> - Makes the text disappear in the textbox after losing focus.
+	Callback = <function> - The function of the textbox.
 ]]
 ```
 
@@ -222,10 +222,10 @@ Tab:AddBind({
 })
 
 --[[
-Name = <string> - The name of the bind.
-Default = <keycode> - The default value of the bind.
-Hold = <bool> - Makes the bind work like: Holding the key > The bind returns true, Not holding the key > Bind returns false.
-Callback = <function> - The function of the bind.
+	Name = <string> - The name of the bind.
+	Default = <keycode> - The default value of the bind.
+	Hold = <bool> - Makes the bind work like: Holding the key > The bind returns true, Not holding the key > Bind returns false.
+	Callback = <function> - The function of the bind.
 ]]
 ```
 
@@ -247,10 +247,10 @@ Tab:AddDropdown({
 })
 
 --[[
-Name = <string> - The name of the dropdown.
-Default = <string> - The default value of the dropdown.
-Options = <table> - The options in the dropdown.
-Callback = <function> - The function of the dropdown.
+	Name = <string> - The name of the dropdown.
+	Default = <string> - The default value of the dropdown.
+	Options = <table> - The options in the dropdown.
+	Callback = <function> - The function of the dropdown.
 ]]
 ```
 
@@ -295,5 +295,5 @@ Config files are made for every game the library is launched in.
 
 ## Destroying the Interface
 ```lua
-OrionLib:Destroy()
+SoleLib:Destroy()
 ```
