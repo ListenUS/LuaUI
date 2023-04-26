@@ -1736,7 +1736,7 @@ function SoleLib:MakeWindow(WindowConfig)
 					})
 				})
 			end
-			SoleLib:MakeNotification({
+			SoleLib:Notify({
 				Name = "UI Library Available",
 				Content = "New UI Library Available - Joining Discord (#announcements)",
 				Time = 8
