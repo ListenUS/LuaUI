@@ -22,8 +22,8 @@ local OrionLib = {
 			TextDark = Color3.fromRGB(150, 150, 150)
 		},
 		Lua = {
-			Main = Color3.fromRGB(163, 60, 161),
-			Second = Color3.fromRGB(32, 32, 32),
+			Main = Color3.fromRGB(3, 165, 252),
+			Second = Color3.fromRGB(29, 143, 204),
 			Stroke = Color3.fromRGB(60, 60, 60),
 			Divider = Color3.fromRGB(60, 60, 60),
 			Text = Color3.fromRGB(240, 240, 240),
@@ -43,7 +43,7 @@ local Success, Response = pcall(function()
 end)
 
 if not Success then
-	warn("\nOrion Library - Failed to load Feather Icons. Error code: " .. Response .. "\n")
+	warn("\nLua Library - Failed to load Feather Icons. Error code: " .. Response .. "\n")
 end	
 
 local function GetIcon(IconName)
