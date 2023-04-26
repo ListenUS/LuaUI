@@ -10,7 +10,7 @@ local SoleLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/List
 
 ## Creating a Window
 ```lua
-local Window = SoleLib:MakeWindow({Name = "Title of the library", HidePremium = false, SaveConfig = true, ConfigFolder = "SoleTest"})
+local Window = SoleLib:MakeWindow({ Name = "Title of the library", HidePremium = false, SaveConfig = true, ConfigFolder = "SoleTest" })
 
 --[[
 	Name = <string> - The name of the UI.
@@ -20,6 +20,7 @@ local Window = SoleLib:MakeWindow({Name = "Title of the library", HidePremium = 
 	IntroEnabled = <bool> - Whether or not to show the intro animation.
 	IntroText = <string> - Text to show in the intro animation.
 	IntroIcon = <string> - URL to the image you want to use in the intro animation.
+	ShowIcon = <bool> - URL to the image you want displayed on the window.
 	Icon = <string> - URL to the image you want displayed on the window.
 	CloseCallback = <function> - Function to execute when the window is closed.
 ]]
@@ -55,7 +56,7 @@ You can add elements to sections the same way you would add them to a tab normal
 
 ## Notifying the user
 ```lua
-OrionLib:MakeNotification({
+SoleLib:Notify({
 	Name = "Title!",
 	Content = "Notification content... what will it say??",
 	Image = "rbxassetid://4483345998",
@@ -268,7 +269,7 @@ Dropdown:Set("dropdown option")
 # Finishing your script (REQUIRED)
 The below function needs to be added at the end of your code.
 ```lua
-OrionLib:Init()
+SoleLib:Init()
 ```
 
 ### How flags work.
@@ -282,7 +283,7 @@ Tab1:AddToggle({
     Flag = "toggle"
 })
 
-print(OrionLib.Flags["toggle"].Value) -- prints the value of the toggle.
+print(SoleLib.Flags["toggle"].Value) -- prints the value of the toggle.
 ```
 Flags only work with the toggle, slider, dropdown, bind, and colorpicker.
 
