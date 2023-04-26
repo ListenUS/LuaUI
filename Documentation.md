@@ -1,5 +1,5 @@
-# Orion Library
-This documentation is for the stable release of Orion Library.
+# Sole Library
+This documentation is for the stable release of Sole Library.
 
 ## Booting the Library
 ```lua
