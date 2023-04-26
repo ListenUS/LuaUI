@@ -24,8 +24,8 @@ local OrionLib = {
 		Lua = {
 			Main = Color3.fromRGB(3, 165, 252),
 			Second = Color3.fromRGB(29, 143, 204),
-			Stroke = Color3.fromRGB(60, 60, 60),
-			Divider = Color3.fromRGB(60, 60, 60),
+			Stroke = Color3.fromRGB(240, 240, 240),
+			Divider = Color3.fromRGB(240, 240, 240),
 			Text = Color3.fromRGB(240, 240, 240),
 			TextDark = Color3.fromRGB(150, 150, 150)
 		}
