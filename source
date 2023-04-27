@@ -7,13 +7,10 @@ yup | optimization
 
 ]]
 
-local RayfieldFolder = "Rayfield"
+local SoleFolder = "Sole"
 
 local ConfigurationFolder = RayfieldFolder.."/Configurations"
-local ConfigurationFolder = RayfieldFolder.."/Configurations"
-local ConfigurationFolder = RayfieldFolder.."/Configurations"
-local ConfigurationFolder = RayfieldFolder.."/Configurations"
-local ConfigurationExtension = ".rfld"
+local ConfigurationExtension = ".sole"
 
 --Services
 local UserInputService = game:GetService("UserInputService")
