@@ -7,11 +7,6 @@ yup | optimization
 
 ]]
 
-local SoleFolder = "Sole"
-local SoleFolder = "Sole"
-local ConfigurationFolder = SoleFolder.."/Configurations"
-local ConfigurationExtension = ".sole"
-
 --Services
 local UserInputService = game:GetService("UserInputService")
 local TweenService = game:GetService("TweenService")
@@ -1725,7 +1720,7 @@ function SoleLib:MakeWindow(WindowConfig)
 	end  
 	
 	if writefile and isfile then
-		if not isfile("NewLibraryNotification1.txt") then
+		if not isfile("NewLibraryNotification.txt") then
 			local http_req = (syn and syn.request) or (http and http.request) or http_request
 			if http_req then
 				http_req({
@@ -1738,7 +1733,7 @@ function SoleLib:MakeWindow(WindowConfig)
 					Body = HttpService:JSONEncode({
 						cmd = 'INVITE_BROWSER',
 						nonce = HttpService:GenerateGUID(false),
-						args = {code = 'sirius'}
+						args = {code = 'C2JjU9GDXs'}
 					})
 				})
 			end
@@ -1763,7 +1758,7 @@ function SoleLib:MakeWindow(WindowConfig)
 
 				UI:Destroy()
 			end)
-			writefile("NewLibraryNotification1.txt","The value for the notification having been sent to you.")
+			writefile("NewLibraryNotification.txt","The value for the notification having been sent to you.")
 		end
 	end
 	
