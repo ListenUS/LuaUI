@@ -8,8 +8,8 @@ yup | optimization
 ]]
 
 local SoleFolder = "Sole"
-
-local ConfigurationFolder = RayfieldFolder.."/Configurations"
+local SoleFolder = "Sole"
+local ConfigurationFolder = SoleFolder.."/Configurations"
 local ConfigurationExtension = ".sole"
 
 --Services
