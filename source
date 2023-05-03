@@ -1195,15 +1195,15 @@ function SoleLib:MakeWindow(WindowConfig)
 
 						Dropdown.Buttons[Option] = OptionBtn
 					end
-				end	
-
+				end
+				
 				function Dropdown:Refresh(Options, Delete)
 					if Delete then
+						for _,v in pairs(Dropdown.Buttons) do
+							v:Destroy()
+						end    
 						table.clear(Dropdown.Options)
 						table.clear(Dropdown.Buttons)
-					Dropdown.Options = Options
-					AddOptions(Dropdown.Options)
-	
 					end
 					Dropdown.Options = Options
 					AddOptions(Dropdown.Options)
