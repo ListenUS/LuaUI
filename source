@@ -1208,8 +1208,8 @@ function SoleLib:MakeWindow(WindowConfig)
 					AddOptions(Dropdown.Options)
 	
 					end
-					--Dropdown.Options = Options
-					--AddOptions(Dropdown.Options)
+					Dropdown.Options = Options
+					AddOptions(Dropdown.Options)
 				end  
 
 				function Dropdown:Set(Value)
