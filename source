@@ -1204,13 +1204,12 @@ function SoleLib:MakeWindow(WindowConfig)
 						end    
 						table.clear(Dropdown.Options)
 						table.clear(Dropdown.Buttons)
-						
-					AddOptions(Dropdown.Options)
-
-	
-					end
 					Dropdown.Options = Options
 					AddOptions(Dropdown.Options)
+	
+					end
+					--Dropdown.Options = Options
+					--AddOptions(Dropdown.Options)
 				end  
 
 				function Dropdown:Set(Value)
